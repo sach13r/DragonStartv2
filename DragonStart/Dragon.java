@@ -51,6 +51,7 @@ public class Dragon
         g.fillRect(x+size * 25, (y + size*25) + size * 50, size * 10, size * 50); //Draw Leg #1
         g.fillRect(x+size * 100, (y + size*25) + size * 50, size * 10, size * 50);// Draw leg #2
         g.fillRect(x+size*25+size*85, y+size*25+(size*50/2),size*85/2,size*15);//tale
+        g.fillRect(x+size*75, y + size* -30, size* 5, size*35);
         
     }
     
