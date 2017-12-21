@@ -12,6 +12,8 @@ public class Dragon
     private int y;
     private int size;
     private Color c;
+    private String word;
+    
 
     /**
      * Default Constructor for objects of class Dragon
@@ -23,12 +25,14 @@ public class Dragon
         y = 50;
         size = 1;
         c = Color.GREEN; // INS comment here.
+        word = "Hi";
     }
-    public Dragon(int x,int y, int size, Color c){
+    public Dragon(int x,int y, int size, Color c, String word){
         this.x = x;
         this.y = y;
         this.size = size;
         this.c = c; // You saw nothing.
+        this.word = word;
     }
         
     
@@ -62,7 +66,15 @@ public class Dragon
     /**
      * Mutator Methods
      */
-    
+    public void dragonTalk(Graphics g){
+        g.setColor(Color.red);
+        g.drawRect( x + size*20, y +size*20,size*15,size*10);
+        
+        g.setColor(Color.yellow);
+        g.drawString(word, x + size * -25,y + size*-25);
+        
+        
+    }
     /**
      * toString
      */
