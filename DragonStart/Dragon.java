@@ -68,9 +68,9 @@ public class Dragon
      */
     public void dragonTalk(Graphics g){
         g.setColor(Color.red);
-        g.drawRect( x + size*20, y +size*20,size*15,size*10);
+        g.drawRect( x + size*50, y +size*-10,size*15,size*10);
         
-        g.setColor(Color.yellow);
+        g.setColor(Color.orange);
         g.drawString(word, x + size * -25,y + size*-25);
         
         
